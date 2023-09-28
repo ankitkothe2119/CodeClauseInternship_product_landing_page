@@ -11,8 +11,8 @@ const ProductSecsion = () => {
                 <div className="availableOn">
                     <p>Also Available On</p>
                     <div className="platforms">
-                        <img src="/images/amazon.png" alt="amazon" />
-                        <img src="./public/images/pfliplkart.png" alt="fliplkart" />
+                        <img className="amazon" src="/images/amazon.png" alt="amazon" />
+                        <img className="flipkart" src="./public/images/flipkart.png" alt="flipkart" />
                     </div>
                 </div>
             </div>

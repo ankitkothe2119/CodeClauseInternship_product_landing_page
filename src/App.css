@@ -21,10 +21,17 @@ nav{
     height: 72px;
     align-items: center;
 }
+.logo {
+    cursor: pointer;
+}
  nav ul {
     display: flex;
     list-style: none;
     gap: 40px;
+ }
+ nav ul li:hover{
+    color: #D01C28;
+    cursor: pointer;
  }
 
  nav button {
@@ -34,9 +41,11 @@ nav{
     background: var(--red);
     height: 32px;
     color: white;
+    cursor: pointer;
  }
 
  .ProductSecsion{
+    display: flex;
     display: flex;
     align-items: center;
     height: calc(100vh - 72px);
@@ -63,17 +72,28 @@ nav{
  }
  
 
-.ProductSecsion .ShopNow{
+ .ProductSecsion .ShopNow{
     background-color: var(--red);
-    font-size: 17px;
-    border-radius: 7px;
-    border-radius: 3px;
+    font-size: 25px;
+    /* border-r: 7px; */
+    border-radius: 5px;
+}
+.ProductSecsion .ShopNow:hover{
+    cursor: pointer;
+    background-color:#2e2e2e ;
+    color: #eef60c;
 }
 .ProductSecsion .Category{
-    background: transparent;
+    background: var(--gray);
     border-radius: 3px;
     font-size: 18px;
+    color: #eef60c;
     border: 1px solid var(--gray);
+ }
+ .ProductSecsion .Category:hover{
+    cursor: pointer;
+    background-color: #D01C28;
+    color: #2e2e2e;
  }
 .ProductSecsion .availableOn p{
     margin-bottom: 8px;
@@ -82,4 +102,8 @@ nav{
 .ProductSecsion .platforms {
     display: flex;
     gap: 18px;
+}
+
+.amazon , .flipkart:hover{
+    cursor: pointer;
 }
